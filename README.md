@@ -34,8 +34,6 @@
 
 # Future animals to be added
 
-Blood Spirit (not an actual clan totem animal but whatever)
-
 Burrock
 
 Goliath Scorpion
@@ -48,6 +46,8 @@ Wolverine
 
 
 # Maybe pile
+
+Blood Spirit (not an actual clan totem animal but whatever)
 
 Branth
 
