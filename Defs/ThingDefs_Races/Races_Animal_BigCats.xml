@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Mongoose -->
+
+    <ThingDef ParentName="AnimalThingBase">
+    <defName>dsBTA_Mongoose</defName>
+    <label>mongoose</label>
+    <description>A cat-like carnivore hailing from Earth, the mongoose is skilled at eliminating small pests that roam the rimworlds.</description>
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <MarketValue>50</MarketValue>
+      <ComfyTemperatureMin>-35</ComfyTemperatureMin>
+    </statBases>
+    <uiIconScale>2</uiIconScale>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <baseBodySize>0.4</baseBodySize>
+      <baseHealthScale>0.25</baseHealthScale>
+      <baseHungerRate>0.1</baseHungerRate>
+      <foodType>VegetarianRoughAnimal, OmnivoreRoughAnimal</foodType>
+      <leatherDef>Leather_Light</leatherDef>
+      <wildness>0.75</wildness>
+      <trainability>Intermediate</trainability>
+      <gestationPeriodDays>6.66</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.8, 1)</li>
+          <li>(2.4, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>8</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.11</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2222</minAge>
+          <soundWounded>Pawn_Rodent_Wounded</soundWounded>
+          <soundDeath>Pawn_Rodent_Death</soundDeath>
+          <soundCall>Pawn_Rodent_Call</soundCall>
+          <soundAngry>Pawn_Rodent_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>dsBTA_Mongoose</defName>
+    <label>mongoose</label>
+    <race>dsBTA_Mongoose</race>
+    <combatPower>40</combatPower>
+    <ecoSystemWeight>0.2</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_Mongoose/dsBTA_Mongoose</texPath>
+          <drawSize>1</drawSize>
+          <color>(161,95,38)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Squirrel/Dessicated_Squirrel</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_Mongoose/dsBTA_Mongoose</texPath>
+          <drawSize>1.25</drawSize>
+          <color>(161,95,38)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Squirrel/Dessicated_Squirrel</texPath>
+          <drawSize>1.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_Mongoose/dsBTA_Mongoose</texPath>
+          <drawSize>1.5</drawSize>
+          <color>(161,95,38)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Squirrel/Dessicated_Squirrel</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+<!-- Nova Cat, add venom effect -->
+
+<ThingDef ParentName="BigCatThingBase">
+    <defName>dsBTA_NovaCat</defName>
+    <label>nova cat</label>
+    <description>A venomous lion-sized feline. It has a spiny, barbed mane capable of inflicting great pain. When threatened, its mane stands on end.</description>
+    <statBases>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <ComfyTemperatureMax>50</ComfyTemperatureMax>
+      <FilthRate>2</FilthRate>
+    </statBases>
+	<race>
+	  <manhunterOnDamageChance>.75</manhunterOnDamageChance>
+	<manhunterOnTameFailChance>.50</manhunterOnTameFailChance>
+			<wildBiomes>
+				<AridShrubland>0</AridShrubland>
+				<BorealForest>0</BorealForest>
+				<ColdBog>0</ColdBog>
+				<TemperateForest>.2</TemperateForest>
+				<TemperateSwamp>.2</TemperateSwamp>
+				<TropicalRainforest>0</TropicalRainforest>
+				<TropicalSwamp>0</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+	</race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BigCatKindBase">
+    <defName>dsBTA_NovaCat</defName>
+    <label>nova cat</label>
+    <race>dsBTA_NovaCat</race>
+	<combatPower>150</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_NovaCat/dsBTA_NovaCat</texPath>
+          <drawSize>1.05</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>1.05</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_NovaCat/dsBTA_NovaCat</texPath>
+          <drawSize>1.35</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>1.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_NovaCat/dsBTA_NovaCat</texPath>
+          <drawSize>2.12</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.1)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>2.12</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>  
+
+<!-- Smoke Jaguar -->
+
+<ThingDef ParentName="BigCatThingBase">
+    <defName>dsBTA_SmokeJaguar</defName>
+    <label>smoke jaguar</label>
+    <description>A genetically engineered jaguar. It is stronger and heavier than its original form found on the rimworlds. It has milky white eyes and an insatiable thirst for blood.</description>
+    <statBases>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <ComfyTemperatureMax>50</ComfyTemperatureMax>
+      <FilthRate>2</FilthRate>
+    </statBases>
+	    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+  <race>
+  <maxPreyBodySize>1.3</maxPreyBodySize>
+  <baseBodySize>1.5</baseBodySize>
+  <manhunterOnDamageChance>.75</manhunterOnDamageChance>
+  <manhunterOnTameFailChance>.50</manhunterOnTameFailChance>
+  			<wildBiomes>
+				<AridShrubland>0</AridShrubland>
+				<BorealForest>0</BorealForest>
+				<ColdBog>0</ColdBog>
+				<TemperateForest>0</TemperateForest>
+				<TemperateSwamp>0</TemperateSwamp>
+				<TropicalRainforest>.3</TropicalRainforest>
+				<TropicalSwamp>.3</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+  </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BigCatKindBase">
+    <defName>dsBTA_SmokeJaguar</defName>
+    <label>smoke jaguar</label>
+    <race>dsBTA_SmokeJaguar</race>
+	<combatPower>150</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_SmokeJag/dsBTA_SmokeJag</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_SmokeJag/dsBTA_SmokeJag</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_SmokeJag/dsBTA_SmokeJag</texPath>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.1)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>2.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>  
+
+
+<!-- Stone Lion -->
+
+<ThingDef ParentName="BigCatThingBase">
+    <defName>dsBTA_StoneLion</defName>
+    <label>stone lion</label>
+    <description>A lion-like creature with stark, grey fur.</description>
+    <statBases>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <ComfyTemperatureMax>50</ComfyTemperatureMax>
+      <FilthRate>2</FilthRate>
+    </statBases>
+	    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+  <race>
+  <maxPreyBodySize>1.3</maxPreyBodySize>
+  <baseBodySize>1.5</baseBodySize>
+  <manhunterOnDamageChance>.75</manhunterOnDamageChance>
+  <manhunterOnTameFailChance>.50</manhunterOnTameFailChance>
+  			<wildBiomes>
+				<AridShrubland>.3</AridShrubland>
+				<BorealForest>0</BorealForest>
+				<ColdBog>0</ColdBog>
+				<TemperateForest>.1</TemperateForest>
+				<TemperateSwamp>0</TemperateSwamp>
+				<TropicalRainforest>.2</TropicalRainforest>
+				<TropicalSwamp>.2</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<Desert>.3</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+  </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BigCatKindBase">
+    <defName>dsBTA_StoneLion</defName>
+    <label>stone lion</label>
+    <race>dsBTA_StoneLion</race>
+	<combatPower>150</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Cougar</texPath>
+          <drawSize>1</drawSize>
+		  <color>(195,195,195)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Cougar</texPath>
+          <drawSize>1.5</drawSize>
+		  <color>(195,195,195)</color>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_StoneLion/dsBTA_StoneLion</texPath>
+          <drawSize>2</drawSize>
+		  <color>(195,195,195)</color>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.1)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>2</drawSize>
+        </dessicatedBodyGraphicData>
+		<femaleGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Cougar</texPath>
+          <drawSize>1.5</drawSize>
+		  <color>(195,195,195)</color>
+          <shadowData>
+            <volume>(0.375, 0.375, 0.375)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </femaleGraphicData>
+        <femaleDessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>2.2</drawSize>
+        </femaleDessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>  
+
+</Defs>
