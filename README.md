@@ -31,6 +31,7 @@
  
  Surat
 
+Wolverine
 
 # Future animals to be added
 
@@ -41,9 +42,6 @@ Goliath Scorpion
 Ice Hellion
 
 Widowmaker
-
-Wolverine
-
 
 # Maybe pile
 
