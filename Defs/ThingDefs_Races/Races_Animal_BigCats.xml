@@ -61,6 +61,7 @@
       <foodType>VegetarianRoughAnimal, OmnivoreRoughAnimal</foodType>
       <leatherDef>Leather_Light</leatherDef>
       <wildness>0.75</wildness>
+	  <useMeatFrom>Cougar</useMeatFrom>
       <trainability>Intermediate</trainability>
       <gestationPeriodDays>6.66</gestationPeriodDays>
       <litterSizeCurve>
@@ -110,7 +111,7 @@
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/dsBTA_Mongoose/dsBTA_Mongoose</texPath>
           <drawSize>1</drawSize>
-          <color>(161,95,38)</color>
+          <color>(38,38,38)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Squirrel/Dessicated_Squirrel</texPath>
@@ -121,7 +122,7 @@
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/dsBTA_Mongoose/dsBTA_Mongoose</texPath>
           <drawSize>1.25</drawSize>
-          <color>(161,95,38)</color>
+          <color>(38,38,38)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Squirrel/Dessicated_Squirrel</texPath>
@@ -132,7 +133,171 @@
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/dsBTA_Mongoose/dsBTA_Mongoose</texPath>
           <drawSize>1.5</drawSize>
-          <color>(161,95,38)</color>
+          <color>(38,38,38)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Squirrel/Dessicated_Squirrel</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <!-- Wolverine -->
+
+<ThingDef ParentName="AnimalThingBase">
+    <defName>dsBTA_Wolverine</defName>
+    <label>wolverine</label>
+    <description>A dog-sized scavenger hailing from Earth, the wolverine is a fierce animal capable of killing prey larger than itself.</description>
+    <statBases>
+      <MoveSpeed>5</MoveSpeed>
+      <MarketValue>50</MarketValue>
+      <ComfyTemperatureMin>-40</ComfyTemperatureMin>
+    </statBases>
+    <uiIconScale>2</uiIconScale>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+		<surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>18</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <baseBodySize>0.4</baseBodySize>
+      <baseHealthScale>0.25</baseHealthScale>
+      <baseHungerRate>0.1</baseHungerRate>
+	  <predator>true</predator>
+	  <maxPreyBodySize>0.85</maxPreyBodySize>
+      <foodType>VegetarianRoughAnimal, OmnivoreRoughAnimal</foodType>
+      <leatherDef>Leather_Light</leatherDef>
+	  <useMeatFrom>Cougar</useMeatFrom>
+      <wildness>0.75</wildness>
+      <trainability>Intermediate</trainability>
+      <gestationPeriodDays>6.66</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(1.8, 1)</li>
+          <li>(2.4, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>12</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.11</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2222</minAge>
+          <soundWounded>Pawn_Rodent_Wounded</soundWounded>
+          <soundDeath>Pawn_Rodent_Death</soundDeath>
+          <soundCall>Pawn_Rodent_Call</soundCall>
+          <soundAngry>Pawn_Rodent_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+	  			<wildBiomes>
+				<AridShrubland>0</AridShrubland>
+				<BorealForest>.2</BorealForest>
+				<ColdBog>.2</ColdBog>
+				<TemperateForest>0</TemperateForest>
+				<TemperateSwamp>0</TemperateSwamp>
+				<TropicalRainforest>0</TropicalRainforest>
+				<TropicalSwamp>0</TropicalSwamp>
+				<IceSheet>.01</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>.2</Tundra>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+	  
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+    </tradeTags>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>dsBTA_Wolverine</defName>
+    <label>wolverine</label>
+    <race>dsBTA_Wolverine</race>
+    <combatPower>80</combatPower>
+    <ecoSystemWeight>0.2</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_Wolverine/dsBTA_Wolverine</texPath>
+          <drawSize>1.2</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Squirrel/Dessicated_Squirrel</texPath>
+          <drawSize>1</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_Wolverine/dsBTA_Wolverine</texPath>
+          <drawSize>1.4</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Squirrel/Dessicated_Squirrel</texPath>
+          <drawSize>1.25</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_Wolverine/dsBTA_Wolverine</texPath>
+          <drawSize>1.8</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Squirrel/Dessicated_Squirrel</texPath>
@@ -147,13 +312,14 @@
 <ThingDef ParentName="BigCatThingBase">
     <defName>dsBTA_NovaCat</defName>
     <label>nova cat</label>
-    <description>A venomous lion-sized feline. It has a spiny, barbed mane capable of inflicting great pain. When threatened, its mane stands on end.</description>
+    <description>A venomous, lion-sized feline. It has a spiny, barbed mane capable of inflicting great pain. When threatened, its mane stands on end.</description>
     <statBases>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <ComfyTemperatureMax>50</ComfyTemperatureMax>
       <FilthRate>2</FilthRate>
     </statBases>
 	<race>
+	<useMeatFrom>Cougar</useMeatFrom>
 	  <manhunterOnDamageChance>.75</manhunterOnDamageChance>
 	<manhunterOnTameFailChance>.50</manhunterOnTameFailChance>
 			<wildBiomes>
@@ -300,6 +466,7 @@
   <baseBodySize>1.5</baseBodySize>
   <manhunterOnDamageChance>.75</manhunterOnDamageChance>
   <manhunterOnTameFailChance>.50</manhunterOnTameFailChance>
+  <useMeatFrom>Cougar</useMeatFrom>
   			<wildBiomes>
 				<AridShrubland>0</AridShrubland>
 				<BorealForest>0</BorealForest>
@@ -363,7 +530,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>  
-
 
 <!-- Stone Lion -->
 
@@ -445,6 +611,7 @@
   <baseBodySize>1.5</baseBodySize>
   <manhunterOnDamageChance>.75</manhunterOnDamageChance>
   <manhunterOnTameFailChance>.50</manhunterOnTameFailChance>
+  <useMeatFrom>Cougar</useMeatFrom>
   			<wildBiomes>
 				<AridShrubland>.3</AridShrubland>
 				<BorealForest>0</BorealForest>

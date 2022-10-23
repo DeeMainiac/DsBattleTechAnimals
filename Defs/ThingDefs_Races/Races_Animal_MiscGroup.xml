@@ -493,7 +493,7 @@
     </tools>
     <race>
       <body>Monkey</body>
-      <petness>0.50</petness>
+      <petness>0.90</petness>
       <herdAnimal>true</herdAnimal>
       <baseBodySize>0.2</baseBodySize>
       <baseHungerRate>0.125</baseHungerRate>
@@ -501,6 +501,7 @@
       <foodType>OmnivoreRoughAnimal, OmnivoreAnimal</foodType>
       <leatherDef>Leather_Light</leatherDef>
       <trainability>Advanced</trainability>
+	  <useMeatFrom>Cat</useMeatFrom>
       <wildness>0.20</wildness>
       <nuzzleMtbHours>18</nuzzleMtbHours>
       <gestationPeriodDays>6.66</gestationPeriodDays>

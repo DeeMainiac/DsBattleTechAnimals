@@ -67,6 +67,7 @@
       <foodType>OmnivoreRoughAnimal</foodType>
       <leatherDef>Leather_Light</leatherDef>
       <trainability>Intermediate</trainability>
+	  <useMeatFrom>Monkey</useMeatFrom>
       <wildness>0.80</wildness>
       <nuzzleMtbHours>24</nuzzleMtbHours>
       <gestationPeriodDays>6.66</gestationPeriodDays>
@@ -343,6 +344,5 @@
 
 <!-- Widowmaker -->
 
-<!-- Wolverine -->
 
 </Defs>
