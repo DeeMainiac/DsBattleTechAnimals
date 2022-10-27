@@ -677,7 +677,7 @@
         </dessicatedBodyGraphicData>
 		<femaleGraphicData>
           <texPath>Things/Pawn/Animal/Cougar/Cougar</texPath>
-          <drawSize>1.5</drawSize>
+          <drawSize>2</drawSize>
 		  <color>(195,195,195)</color>
           <shadowData>
             <volume>(0.375, 0.375, 0.375)</volume>

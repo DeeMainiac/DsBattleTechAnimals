@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<!-- Blood Spirit -->
-
-<!-- Burrock -->
-
 <!-- Fire Mandrill -->
 
 <ThingDef ParentName="AnimalThingBase">
@@ -161,8 +157,6 @@
       </li>
     </lifeStages>
   </PawnKindDef>
-
-<!-- Goliath Scorpion -->
 
 <!-- Hell's Horse -->
 
@@ -342,7 +336,6 @@
 
 <!-- Ice Hellion -->
 
-<!-- Widowmaker -->
-
+<!-- Blood Spirit -->
 
 </Defs>
