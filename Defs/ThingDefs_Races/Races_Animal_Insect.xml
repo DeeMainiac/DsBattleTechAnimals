@@ -150,7 +150,7 @@
   </PawnKindDef>
 
 
-<!-- Goliath Scorpion, add poison -->
+<!-- Goliath Scorpion-->
 
   <ThingDef ParentName="BaseInsect">
     <defName>dsBTA_GoliathScorpion</defName>
@@ -177,6 +177,15 @@
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
       </li>
+	   <li>
+        <label>pincers</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+      </li>
       <li>
         <label>head</label>
         <capacities>
@@ -188,10 +197,27 @@
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.1</chanceFactor>
       </li>
+	  <li>
+        <label>stinger</label>
+        <capacities>
+          <li>ToxicBite</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Mouth</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>15</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
     </tools>
     <race>
       <body>BeetleLike</body>
-      <baseBodySize>0.25</baseBodySize>
+      <baseBodySize>0.1</baseBodySize>
       <baseHungerRate>0.10</baseHungerRate>
       <baseHealthScale>0.4</baseHealthScale>
       <useMeatFrom>Megaspider</useMeatFrom>
@@ -259,8 +285,8 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Megascarab</texPath>
-          <drawSize>1</drawSize>
+          <texPath>Things/Pawn/Animal/dsBTA_GoliathScorpion/dsBTA_GoliathScorpion</texPath>
+          <drawSize>.4</drawSize>
           <color>(114,1,84)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -270,8 +296,8 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Megascarab</texPath>
-          <drawSize>1.25</drawSize>
+          <texPath>Things/Pawn/Animal/dsBTA_GoliathScorpion/dsBTA_GoliathScorpion</texPath>
+          <drawSize>.7</drawSize>
           <color>(114,1,84)</color>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -281,8 +307,8 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawn/Animal/Megascarab/Megascarab</texPath>
-          <drawSize>1.5</drawSize>
+          <texPath>Things/Pawn/Animal/dsBTA_GoliathScorpion/dsBTA_GoliathScorpion</texPath>
+          <drawSize>1</drawSize>
           <color>(114,1,84)</color>
           <shadowData>
             <volume>(0.2, 0.3, 0.2)</volume>

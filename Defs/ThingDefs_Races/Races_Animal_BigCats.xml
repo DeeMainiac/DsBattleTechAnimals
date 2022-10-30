@@ -307,7 +307,7 @@
     </lifeStages>
   </PawnKindDef>
   
-<!-- Nova Cat, add venom effect -->
+<!-- Nova Cat-->
 
 <ThingDef ParentName="BigCatThingBase">
     <defName>dsBTA_NovaCat</defName>
@@ -337,6 +337,25 @@
 				<ExtremeDesert>0</ExtremeDesert>
 			</wildBiomes>
 	</race>
+	<tools>
+	      <li>
+        <label>spines</label>
+        <capacities>
+          <li>ToxicBite</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2</cooldownTime>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>15</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+	
+	</tools>
   </ThingDef>
 
   <PawnKindDef ParentName="BigCatKindBase">
