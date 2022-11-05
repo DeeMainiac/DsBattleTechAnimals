@@ -3,6 +3,8 @@
  
 # Currently added animals
  
+ Burrock
+ 
  Coyote
  
  Sea Fox
@@ -35,7 +37,6 @@ Wolverine
 
 # Future animals to be added
 
-Burrock
 
 Goliath Scorpion
 
