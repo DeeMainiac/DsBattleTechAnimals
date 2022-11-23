@@ -15,6 +15,8 @@
  
  Cloud Cobra
  
+ Ice Hellion
+ 
  Star Adder
  
  Steel Viper
@@ -37,10 +39,7 @@ Wolverine
 
 # Future animals to be added
 
-
 Goliath Scorpion
-
-Ice Hellion
 
 Widowmaker
 
