@@ -37,11 +37,11 @@
 
 Wolverine
 
+Widowmaker
+
 # Future animals to be added
 
 Goliath Scorpion
-
-Widowmaker
 
 # Maybe pile
 
