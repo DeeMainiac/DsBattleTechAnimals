@@ -13,6 +13,8 @@
  
  Ghost Bear
  
+ Goliath Scorpion
+ 
  Cloud Cobra
  
  Ice Hellion
@@ -35,15 +37,11 @@
  
  Surat
 
-Wolverine
+ Wolverine
 
-Widowmaker
+ Widowmaker
 
 # Future animals to be added
-
-Goliath Scorpion
-
-# Maybe pile
 
 Blood Spirit (not an actual clan totem animal but whatever)
 
