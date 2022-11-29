@@ -15,7 +15,7 @@
 		<li>Ludeon.RimWorld.Biotech</li>
 </loadAfter>
 
-<description>Adds animals from the classic BattleTech/MechWarrior series. \n\nIncludes the clan totem animals too, except the Diamond Shark.</description>
+<description>Adds animals from the classic BattleTech/MechWarrior series. \n\nIncludes the clan totem animals too, but not the Diamond Shark.</description>
 
 </ModMetaData>
   <!-- =================================================================== -->
