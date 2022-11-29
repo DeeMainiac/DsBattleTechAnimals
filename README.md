@@ -5,47 +5,45 @@
  
  Burrock
  
+ Cloud Cobra
+ 
  Coyote
  
- Sea Fox
- 
- [Strana Mechty] Wolf
+ Fire Mandrill
  
  Ghost Bear
  
  Goliath Scorpion
  
- Cloud Cobra
+ Hell's Horse
  
  Ice Hellion
+ 
+ Jade Falcon
+ 
+ Mongoose
+ 
+ Nova Cat
+ 
+ Sea Fox
+ 
+ Smoke Jaguar
+ 
+ Snow Raven
  
  Star Adder
  
  Steel Viper
  
- Fire Mandrill
- 
- Hell's Horse
- 
- Mongoose 
- 
- Nova Cat
- 
- Smoke Jaguar
- 
- Stone Lion
+ Strana Mechty Wolf
  
  Surat
-
+ 
  Syramon Thunderbird
-
- Wolverine
-
+ 
  Widowmaker
  
- Jade Falcon
- 
- Snow Raven
+ Wolverine
 
 # Future animals to be added
 
