@@ -42,6 +42,10 @@
  Wolverine
 
  Widowmaker
+ 
+ Jade Falcon
+ 
+ Snow Raven
 
 # Future animals to be added
 
