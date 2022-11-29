@@ -37,6 +37,8 @@
  
  Surat
 
+ Syramon Thunderbird
+
  Wolverine
 
  Widowmaker

@@ -170,7 +170,6 @@
       <ComfyTemperatureMin>-35</ComfyTemperatureMin>
       <ComfyTemperatureMax>45</ComfyTemperatureMax>
       <FilthRate>16</FilthRate>
-      <CaravanRidingSpeedFactor>1.6</CaravanRidingSpeedFactor>
     </statBases>
     <uiIconScale>1.1</uiIconScale>
     <race>
