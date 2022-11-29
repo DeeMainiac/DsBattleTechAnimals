@@ -3,45 +3,47 @@
  
 # Currently added animals
  
- Burrock
- 
- Coyote
- 
- Sea Fox
- 
- [Strana Mechty] Wolf
- 
- Ghost Bear
- 
- Goliath Scorpion
- 
- Cloud Cobra
- 
- Ice Hellion
- 
- Star Adder
- 
- Steel Viper
- 
- Fire Mandrill
- 
- Hell's Horse
- 
- Mongoose 
- 
- Nova Cat
- 
- Smoke Jaguar
- 
- Stone Lion
- 
- Surat
+Burrock
 
- Syramon Thunderbird
+Cloud Cobra
 
- Wolverine
+Coyote
 
- Widowmaker
+Fire Mandrill
+
+Ghost Bear
+
+Goliath Scorpion
+
+Hell’s Horse
+
+Ice Hellion
+
+Jade Falcon
+
+Mongoose
+
+Nova Cat
+
+Sea Fox
+
+Smoke Jaguar
+
+Snow Raven
+
+Star Adder
+
+Steel Viper
+
+Strana Mechty Wolf
+
+Surat
+
+Syramon Thunderbird
+
+Widowmaker
+
+Wolverine
 
 # Future animals to be added
 

@@ -280,9 +280,9 @@
     <defName>dsBTA_HellHorse</defName>
     <label>hell's horse</label>
     <race>dsBTA_HellHorse</race>
-    <combatPower>140</combatPower>
+    <combatPower>150</combatPower>
     <ecoSystemWeight>1.1</ecoSystemWeight>
-    <wildGroupSize>4~10</wildGroupSize>
+    <wildGroupSize>4~8</wildGroupSize>
     <lifeStages>
       <li>
         <label>hell's foal</label>
