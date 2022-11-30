@@ -1,5 +1,6 @@
-# D's BattleTech Animals
- Mod for RimWorld that adds animals from the BattleTech/Mechwarriors universe.
+![](https://github.com/DeeMainiac/DsBattleTechAnimals/blob/main/About/Preview.png)
+
+ Mod for RimWorld that adds extraterrestrial beasties from the BattleTech/MechWarriors universe.
  
  Link to Steam Workshop page: https://steamcommunity.com/sharedfiles/filedetails/?id=2895327608
  
