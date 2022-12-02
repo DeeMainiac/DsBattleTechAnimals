@@ -43,14 +43,7 @@
           <def>AnimalAdult</def>
           <minAge>0.2222</minAge>
         </li>
-      </lifeStageAges>
-      <headPosPerRotation>
-        <li>(0.0, 0, 0.37)</li>
-        <li>(0.23, 0, 0.27)</li>
-        <li>(0.0, 0, 0.27)</li>
-        <li>(-0.23, 0, 0.27)</li>
-      </headPosPerRotation>
-	  	  			
+      </lifeStageAges>	  	  			
 			<wildBiomes>
 				<AridShrubland>.2</AridShrubland>
 				<BorealForest>0</BorealForest>
