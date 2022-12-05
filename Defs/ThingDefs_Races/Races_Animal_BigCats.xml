@@ -708,4 +708,92 @@
     </lifeStages>
   </PawnKindDef>  
 
+<!-- Tabiranth -->
+
+<ThingDef ParentName="BigCatThingBase">
+    <defName>dsBTA_Tabiranth</defName>
+    <label>tabiranth</label>
+    <description>A powerful, lion-sized feline affectionately referred to as a "tabi". Hailing from the lost planet of Jardine, it is a popular beast of burden and riding companion throughout space.</description>
+    <statBases>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <ComfyTemperatureMax>50</ComfyTemperatureMax>
+      <FilthRate>2</FilthRate>
+    </statBases>
+	<race>
+	<packAnimal>true</packAnimal>
+	<useMeatFrom>Cougar</useMeatFrom>
+	  <manhunterOnDamageChance>.4</manhunterOnDamageChance>
+	<manhunterOnTameFailChance>.4</manhunterOnTameFailChance>
+	      <baseBodySize>2</baseBodySize>
+			<wildBiomes>
+				<AridShrubland>0</AridShrubland>
+				<BorealForest>0</BorealForest>
+				<ColdBog>0</ColdBog>
+				<TemperateForest>.2</TemperateForest>
+				<TemperateSwamp>0</TemperateSwamp>
+				<TropicalRainforest>.2</TropicalRainforest>
+				<TropicalSwamp>.2</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+	</race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BigCatKindBase">
+    <defName>dsBTA_Tabiranth</defName>
+    <label>tabiranth</label>
+    <race>dsBTA_Tabiranth</race>
+	<combatPower>150</combatPower>
+	    <alternateGraphicChance>0.8</alternateGraphicChance>
+    <alternateGraphics>
+      <li><texPath>Things/Pawn/Animal/dsBTA_Tabiranth/dsBTA_Tabiranth</texPath></li>
+      <li><texPath>Things/Pawn/Animal/dsBTA_Tabiranth/dsBTA_Tabiranth1</texPath></li>
+      <li><texPath>Things/Pawn/Animal/dsBTA_Tabiranth/dsBTA_Tabiranth2</texPath></li>
+      <li><texPath>Things/Pawn/Animal/dsBTA_Tabiranth/dsBTA_Tabiranth3</texPath></li>
+    </alternateGraphics>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_Tabiranth/dsBTA_Tabiranth</texPath>
+          <drawSize>1</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>1.05</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_Tabiranth/dsBTA_Tabiranth</texPath>
+          <drawSize>1.3</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>1.35</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_Tabiranth/dsBTA_Tabiranth</texPath>
+          <drawSize>2.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+            <offset>(0,0,-0.1)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
+          <drawSize>2.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef> 
+
 </Defs>
