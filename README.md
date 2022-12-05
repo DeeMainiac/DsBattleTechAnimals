@@ -44,6 +44,8 @@
  
  Syramon Thunderbird
  
+ Tabiranth
+ 
  Widowmaker
  
  Wolverine
