@@ -44,7 +44,7 @@
  
  Syramon Thunderbird
  
- Tabiranth
+ Tabiranth [NEW!]
  
  Widowmaker
  
