@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+<!-- Odessan Raxx -->
+
 <ThingDef ParentName="AnimalThingBase">
     <defName>dsBTA_OdessanRaxx</defName>
     <label>odessan raxx</label>
@@ -48,6 +50,20 @@
       <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+	      	<wildBiomes>
+				<AridShrubland>.2</AridShrubland>
+				<BorealForest>0</BorealForest>
+				<ColdBog>0</ColdBog>
+				<TemperateForest>.1</TemperateForest>
+				<TemperateSwamp>.1</TemperateSwamp>
+				<TropicalRainforest>0</TropicalRainforest>
+				<TropicalSwamp>.1</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<Desert>.2</Desert>
+				<ExtremeDesert>.1</ExtremeDesert>
+			</wildBiomes>
       <headPosPerRotation>
         <li>(0.0, 0, 0.05)</li>
         <li>(0.285, 0, 0.02)</li>
