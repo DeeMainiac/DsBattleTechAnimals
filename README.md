@@ -28,6 +28,8 @@
  
  Nova Cat
  
+ Odessan Raxx [NEW!]
+ 
  Sea Fox
  
  Smoke Jaguar
@@ -59,8 +61,6 @@ Branth
 'Mech Marten
 
 Nolan
-
-Odessan Raxx
 
 Sphinx Raptor
 
