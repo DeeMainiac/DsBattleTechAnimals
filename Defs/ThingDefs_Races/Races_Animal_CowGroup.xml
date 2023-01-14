@@ -128,7 +128,7 @@
     </tools>
   </ThingDef>
 
-  <PawnKindDef Name="Muffalo" ParentName="AnimalKindBase">
+  <PawnKindDef ParentName="AnimalKindBase">
     <defName>dsBTA_OdessanRaxx</defName>
     <label>odessan raxx</label>
     <race>dsBTA_OdessanRaxx</race>
