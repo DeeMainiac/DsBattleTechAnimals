@@ -24,7 +24,7 @@
  
  Jade Falcon
  
- Lyran Shepherd
+ Lyran Shepherd [NEW!]
  
  Mongoose
  
