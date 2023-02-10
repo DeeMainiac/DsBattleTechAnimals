@@ -24,6 +24,8 @@
  
  Jade Falcon
  
+ Lyran Shepherd
+ 
  Mongoose
  
  Nova Cat
