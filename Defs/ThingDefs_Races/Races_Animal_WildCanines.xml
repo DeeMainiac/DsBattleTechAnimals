@@ -165,7 +165,7 @@
   
   <!-- Strana Mechty Wolf -->
   
-    <ThingDef ParentName="ThingBaseWolf">
+  <ThingDef ParentName="ThingBaseWolf">
     <defName>dsBTA_StranaMechtyWolf</defName>
     <label>Strana Mechty wolf</label>
     <description>A rugged predator long feared by many ancient Earth cultures. As pack hunters, wolves have complex social lives and are fiercely intelligent.\n\nStrana Mechty wolves are larger and more intelligent than their Earth counterparts.</description>
