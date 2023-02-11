@@ -24,6 +24,8 @@
  
  Jade Falcon
  
+ Kigamboni Leopard [NEW!]
+ 
  Lyran Shepherd [NEW!]
  
  Mongoose
@@ -48,7 +50,7 @@
  
  Syramon Thunderbird
  
- Tabiranth [NEW!]
+ Tabiranth
  
  Widowmaker
  
