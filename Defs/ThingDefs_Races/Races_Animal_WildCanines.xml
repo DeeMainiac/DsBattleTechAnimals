@@ -422,7 +422,12 @@
     <label>lyran shepherd</label>
     <race>dsBTA_LyranShep</race>
     <combatPower>85</combatPower>
+	<alternateGraphicChance>0.8</alternateGraphicChance>
     <ecoSystemWeight>0.7</ecoSystemWeight>
+	    <alternateGraphics>
+      <li><texPath>Things/Pawn/Animal/dsBTA_LyranShep/dsBTA_LyranShep</texPath></li>
+      <li><texPath>Things/Pawn/Animal/dsBTA_LyranShep/dsBTA_LyranShep1</texPath></li>
+    </alternateGraphics>
     <lifeStages>
       <li>
         <label>lyran shepherd puppy</label>
