@@ -23,8 +23,10 @@
  Ice Hellion
  
  Jade Falcon
+
+ Jardinian Fire Cat [NEW!]
  
- Kigamboni Leopard [NEW!]
+ Kigamboni Leopard
  
  Lyran Shepherd [NEW!]
  
