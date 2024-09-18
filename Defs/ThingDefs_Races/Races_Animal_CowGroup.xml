@@ -171,7 +171,7 @@
 	   <labelPlural>raxxen</labelPlural>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/dsBTA_OdessanRaxx/dsBTA_OdessanRaxx</texPath>
-          <drawSize>3.2</drawSize>
+          <drawSize>3.4</drawSize>
           <shadowData>
             <volume>(0.8, 0.6, 0.6)</volume>
             <offset>(0,0,-0.3)</offset>

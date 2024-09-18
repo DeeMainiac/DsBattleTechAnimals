@@ -782,7 +782,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawn/Animal/dsBTA_Tabiranth/dsBTA_Tabiranth</texPath>
-          <drawSize>2.5</drawSize>
+          <drawSize>2.6</drawSize>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
             <offset>(0,0,-0.1)</offset>
@@ -790,7 +790,7 @@
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Cougar/Dessicated_Cougar</texPath>
-          <drawSize>2.5</drawSize>
+          <drawSize>2.6</drawSize>
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
