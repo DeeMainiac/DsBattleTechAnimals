@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="BaseBear">
+    <defName>dsBTA_GhostBear</defName>
+    <label>ghost bear</label>
+    <description>A massive white bear-like creature adapted for frozen climates. Nearly the size of a Thrumbo, they lie in wait for prey.\n\nTheir fur and claws are often used for ceremonial purposes, and are quite valuable.</description>
+    <statBases>
+      <ComfyTemperatureMin>-55</ComfyTemperatureMin>
+	  <Wildness>0.85</Wildness>
+    </statBases>
+    <race>
+      <useMeatFrom>Bear_Grizzly</useMeatFrom>
+	  <baseBodySize>2.5</baseBodySize>
+	  			<wildBiomes>
+				<AridShrubland>0</AridShrubland>
+				<BorealForest>.1</BorealForest>
+				<ColdBog>.1</ColdBog>
+				<TemperateForest>0</TemperateForest>
+				<TemperateSwamp>0</TemperateSwamp>
+				<TropicalRainforest>0</TropicalRainforest>
+				<TropicalSwamp>0</TropicalSwamp>
+				<IceSheet>.2</IceSheet>
+				<SeaIce>.2</SeaIce>
+				<Tundra>.2</Tundra>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BearBase">
+    <defName>dsBTA_GhostBear</defName>
+    <label>ghost bear</label>
+    <race>dsBTA_GhostBear</race>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bear/Bear</texPath>
+          <drawSize>1.4</drawSize>
+          <color>(180,180,180)</color>
+          <shadowData>
+            <volume>(0.4, 0.3, 0.3)</volume>
+            <offset>(0,0,-0.2)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+          <drawSize>1.4</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bear/Bear</texPath>
+          <drawSize>2.5</drawSize>
+          <color>(180,180,180)</color>
+          <shadowData>
+            <volume>(0.6, 0.45, 0.45)</volume>
+            <offset>(0,0,-0.25)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+          <drawSize>2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bear/Bear</texPath>
+          <drawSize>3</drawSize>
+          <color>(180,180,180)</color>
+          <shadowData>
+            <volume>(0.8, 0.6, 0.6)</volume>
+            <offset>(0,0,-0.3)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+          <drawSize>3</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+</Defs>

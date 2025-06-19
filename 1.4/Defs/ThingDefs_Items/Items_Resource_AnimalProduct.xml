@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- birds -->
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>dsBTA_EggJadeFalconFertilized</defName>
+    <label>jade falcon egg (fert.)</label>
+    <description>A fertilized jade falcon egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>dsBTA_JadeFalcon</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>dsBTA_EggJadeFalconUnfertilized</defName>
+    <label>jade falcon egg (unfert.)</label>
+    <description>An unfertilized jade falcon egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(228,185,135)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>dsBTA_EggSnowRavenFertilized</defName>
+    <label>snow raven egg (fert.)</label>
+    <description>A fertilized snow raven egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>7.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>dsBTA_SnowRaven</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>dsBTA_EggSnowRavenUnfertilized</defName>
+    <label>snow raven egg (unfert.)</label>
+    <description>An unfertilized snow raven egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(228,185,135)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>dsBTA_EggThunderbirdFertilized</defName>
+    <label>syramon thunderbird egg (fert.)</label>
+    <description>A fertilized syramon thunderbird egg. If all goes well, it should hatch into a chick. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>14.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+        <hatcherPawn>dsBTA_SyramonThunder</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>dsBTA_EggThunderbirdUnfertilized</defName>
+    <label>syramon thunderbird egg (unfert.)</label>
+    <description>An unfertilized syramon thunderbird egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(228,185,135)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+<!-- sneks -->
+
+  <ThingDef ParentName="EggFertBase">
+    <defName>dsBTA_EggCloudCobraFertilized</defName>
+    <label>cloud cobra egg (fert.)</label>
+    <description>A fertilized cloud cobra egg. If all goes well, it should hatch into a baby cloud cobra. It can be eaten raw, but it's much better cooked.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+      <color>(245,245,245)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>18.0</MarketValue>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Hatcher">
+        <hatcherDaystoHatch>4.5</hatcherDaystoHatch>
+        <hatcherPawn>dsBTA_CloudCobra</hatcherPawn>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="EggUnfertBase">
+    <defName>dsBTA_EggCloudCobraUnfertilized</defName>
+    <label>cloud cobra egg (unfert.)</label>
+    <description>An unfertilized cloud cobra egg. It can be eaten raw, but it's much, much better cooked.</description>
+    <graphicData>
+      <color>(228,185,135)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.0</MarketValue>
+    </statBases>
+  </ThingDef>
+
+</Defs>

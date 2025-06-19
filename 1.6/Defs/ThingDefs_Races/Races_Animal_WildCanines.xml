@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!-- Coyote -->
+
+<ThingDef ParentName="ThingBaseWolf">
+    <defName>dsBTA_Coyote</defName>
+    <label>coyote</label>
+<description>A moderate sized, slightly genetically modified canine. Known for its intelligence, they often form hunting partnerships with other predators.</description>
+    <statBases>
+      <MoveSpeed>4.8</MoveSpeed>
+      <ComfyTemperatureMin>-35</ComfyTemperatureMin>
+      <MarketValue>300</MarketValue>
+	  <Wildness>0.8</Wildness>
+    </statBases>
+	<race>
+      <maxPreyBodySize>0.80</maxPreyBodySize>
+      <baseBodySize>0.6</baseBodySize>
+      <baseHungerRate>0.1</baseHungerRate>
+      <baseHealthScale>0.80</baseHealthScale>
+      <leatherDef>Leather_Wolf</leatherDef>
+	 <useMeatFrom>Wolf_Timber</useMeatFrom>
+	  <manhunterOnDamageChance>.50</manhunterOnDamageChance>
+      <gestationPeriodDays>10</gestationPeriodDays>
+      <lifeExpectancy>11</lifeExpectancy>
+	  			<wildBiomes>
+				<AridShrubland>.2</AridShrubland>
+				<BorealForest>0</BorealForest>
+				<ColdBog>0</ColdBog>
+				<TemperateForest>.2</TemperateForest>
+				<TemperateSwamp>.2</TemperateSwamp>
+				<TropicalRainforest>0</TropicalRainforest>
+				<TropicalSwamp>.2</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBaseWolf">
+    <defName>dsBTA_Coyote</defName>
+    <label>coyote</label>
+    <labelPlural>coyotes</labelPlural>
+    <race>dsBTA_Coyote</race>
+	<combatPower>65</combatPower>
+    <lifeStages>
+      <li>
+        <label>coyote puppy</label>
+        <labelPlural>coyote puppies</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_Coyote/dsBTA_Coyote</texPath>
+          <drawSize>.9</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
+          <drawSize>.9</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_Coyote/dsBTA_Coyote</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_Coyote/dsBTA_Coyote</texPath>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Wolf_Timber/Dessicated_Wolf_Timber</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <!-- Sea Fox -->
+  
+  <ThingDef ParentName="ThingBaseFox">
+    <defName>dsBTA_SeaFox</defName>
+    <label>sea fox</label>
+    <description>An aquatic red fox-like creature that often dominates freshwater oceans. \n\nNearly extinct on their homeworld, the sea foxes found in the rimworlds have adapted to spend more time on land.</description>
+    <race>
+      <useMeatFrom>Fox_Fennec</useMeatFrom>
+	  			<wildBiomes>
+				<AridShrubland>.2</AridShrubland>
+				<BorealForest>.2</BorealForest>
+				<ColdBog>0</ColdBog>
+				<TemperateForest>0</TemperateForest>
+				<TemperateSwamp>.3</TemperateSwamp>
+				<TropicalRainforest>0</TropicalRainforest>
+				<TropicalSwamp>0</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>0</Tundra>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBaseFox">
+    <defName>dsBTA_SeaFox</defName>
+    <label>sea fox</label>
+    <labelPlural>sea foxes</labelPlural>
+    <race>dsBTA_SeaFox</race>
+    <lifeStages>
+      <li>
+        <label>sea fox puppy</label>
+        <labelPlural>sea fox puppies</labelPlural>
+        <bodyGraphicData>
+		  <color>(123,104,89)</color>
+          <texPath>Things/Pawn/Animal/Fox_Red/Fox_Red</texPath>
+          <drawSize>.9</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Fox_Red/Dessicated_Fox_Red</texPath>
+          <drawSize>.9</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+		<color>(123,104,89)</color>
+          <texPath>Things/Pawn/Animal/Fox_Red/Fox_Red</texPath>
+          <drawSize>1.2</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Fox_Red/Dessicated_Fox_Red</texPath>
+          <drawSize>1.2</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Fox_Red/Fox_Red</texPath>
+          <drawSize>1.68</drawSize>
+		  <color>(123,104,89)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Fox_Red/Dessicated_Fox_Red</texPath>
+          <drawSize>1.68</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  <!-- Strana Mechty Wolf -->
+  
+  <ThingDef ParentName="ThingBaseWolf">
+    <defName>dsBTA_StranaMechtyWolf</defName>
+    <label>Strana Mechty wolf</label>
+    <description>A rugged predator long feared by many ancient Earth cultures. As pack hunters, wolves have complex social lives and are fiercely intelligent.\n\nStrana Mechty wolves are larger and more intelligent than their Earth counterparts.</description>
+    <race>
+	<baseBodySize>1.4</baseBodySize>
+	<baseHealthScale>1.2</baseHealthScale>
+     <leatherDef>Leather_Wolf</leatherDef>
+	 <useMeatFrom>Wolf_Timber</useMeatFrom>
+	 			<wildBiomes>
+				<AridShrubland>0</AridShrubland>
+				<BorealForest>.3</BorealForest>
+				<ColdBog>.3</ColdBog>
+				<TemperateForest>0</TemperateForest>
+				<TemperateSwamp>0</TemperateSwamp>
+				<TropicalRainforest>0</TropicalRainforest>
+				<TropicalSwamp>0</TropicalSwamp>
+				<IceSheet>0</IceSheet>
+				<SeaIce>0</SeaIce>
+				<Tundra>.2</Tundra>
+				<Desert>0</Desert>
+				<ExtremeDesert>0</ExtremeDesert>
+			</wildBiomes>
+    </race>
+	    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>1.5</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>razorfangs</label>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.9</chanceFactor>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <PawnKindDef ParentName="AnimalKindBaseWolf">
+    <defName>dsBTA_StranaMechtyWolf</defName>
+    <label>Strana Mechty wolf</label>
+    <labelPlural>Strana Mechty wolves</labelPlural>
+    <race>dsBTA_StranaMechtyWolf</race>
+    <lifeStages>
+      <li>
+        <label>Strana Mechty wolf puppy</label>
+        <labelPlural>Strana Mechty wolf puppies</labelPlural>
+         <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Wolf_Timber/Wolf_Timber</texPath>
+          <drawSize>1.05</drawSize>
+          <color>(123,104,89)</color>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+          <drawSize>1.05</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Wolf_Timber/Wolf_Timber</texPath>
+          <drawSize>1.7</drawSize>
+          <color>(123,104,89)</color>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+          <drawSize>1.7</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/Wolf_Timber/Wolf_Timber</texPath>
+          <drawSize>2.15</drawSize>
+          <color>(123,104,89)</color>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Warg/Dessicated_Warg</texPath>
+          <drawSize>2.15</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+<!-- Lyran Shepherd -->
+  
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>dsBTA_LyranShep</defName>
+    <label>lyran shepherd</label>
+    <description>A large dog hailing from Tharkad. It is fiercely loyal, and has a thick fur coat for remaining comfortable in arctic environments.</description>
+    <statBases>
+      <MoveSpeed>5.0</MoveSpeed>
+      <MarketValue>300</MarketValue>
+      <ComfyTemperatureMin>-50</ComfyTemperatureMin>
+	  <Wildness>0</Wildness>
+    </statBases>
+    <tools>
+      <li>
+        <label>left claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>right claw</label>
+        <capacities>
+          <li>Scratch</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Bite</li>
+        </capacities>
+        <power>16</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+        <chanceFactor>0.7</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <animalType>Canine</animalType>
+      <body>QuadrupedAnimalWithPawsAndTail</body>
+      <petness>1</petness>
+      <baseBodySize>.95</baseBodySize>
+      <baseHungerRate>0.4</baseHungerRate>
+      <baseHealthScale>1.2</baseHealthScale>
+      <foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+      <leatherDef>Leather_Dog</leatherDef>
+      <nameOnTameChance>1</nameOnTameChance>
+      <trainability>Advanced</trainability>
+      <nuzzleMtbHours>12</nuzzleMtbHours>
+      <gestationPeriodDays>10</gestationPeriodDays>
+      <litterSizeCurve>
+        <points>
+          <li>(0.5, 0)</li>
+          <li>(1, 1)</li>
+          <li>(2, 1.7)</li>
+          <li>(2.5, 0.7)</li>
+          <li>(3, 0)</li>
+        </points>
+      </litterSizeCurve>
+      <lifeExpectancy>10</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalBaby</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0.25</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.5</minAge>
+          <soundWounded>Pawn_Dog_Injured</soundWounded>
+          <soundDeath>Pawn_Dog_Death</soundDeath>
+          <soundCall>Pawn_Dog_Call</soundCall>
+          <soundAngry>Pawn_Dog_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <headPosPerRotation>
+        <li>(0.02, 0, 0.25)</li>
+        <li>(0.24, 0, 0.11)</li>
+        <li>(0.02, 0, -0.16)</li>
+        <li>(-0.24, 0, 0.11)</li>
+      </headPosPerRotation>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+      <li>AnimalPet</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>dsBTA_LyranShep</defName>
+    <label>lyran shepherd</label>
+    <race>dsBTA_LyranShep</race>
+    <combatPower>85</combatPower>
+	<alternateGraphicChance>0.8</alternateGraphicChance>
+    <ecoSystemWeight>0.7</ecoSystemWeight>
+	    <alternateGraphics>
+      <li><texPath>Things/Pawn/Animal/dsBTA_LyranShep/dsBTA_LyranShep</texPath></li>
+      <li><texPath>Things/Pawn/Animal/dsBTA_LyranShep/dsBTA_LyranShep1</texPath></li>
+    </alternateGraphics>
+    <lifeStages>
+      <li>
+        <label>lyran shepherd puppy</label>
+        <labelPlural>lyran shepherd puppies</labelPlural>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_LyranShep/dsBTA_LyranShep</texPath>
+          <drawSize>1.5</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Husky/Dessicated_Husky</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_LyranShep/dsBTA_LyranShep</texPath>
+          <drawSize>1.75</drawSize>
+          <shadowData>
+            <volume>(0.25, 0.3, 0.25)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Husky/Dessicated_Husky</texPath>
+          <drawSize>1.5</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawn/Animal/dsBTA_LyranShep/dsBTA_LyranShep</texPath>
+          <drawSize>2</drawSize>
+          <shadowData>
+            <volume>(0.3, 0.4, 0.3)</volume>
+            <offset>(0,0,-0.15)</offset>
+          </shadowData>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Husky/Dessicated_Husky</texPath>
+          <drawSize>1.75</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+  
+  
+  
+  
+</Defs>

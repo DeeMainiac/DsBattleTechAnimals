@@ -62,6 +62,7 @@
     <comps>
       <li Class="CompProperties_EggLayer">
         <eggFertilizedDef>dsBTA_EggThunderbirdFertilized</eggFertilizedDef>
+		<eggUnfertilizedDef>dsBTA_EggThunderbirdUnfertilized</eggUnfertilizedDef>
         <eggFertilizationCountMax>1</eggFertilizationCountMax>
         <eggLayIntervalDays>3.33</eggLayIntervalDays>
         <eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
